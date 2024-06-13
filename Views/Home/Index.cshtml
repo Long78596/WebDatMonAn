@@ -2,7 +2,448 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<header>
+    <div class="navbar">
+        <div class="lg-head">
+            <img src="./pic/logo.webp">
+        </div>
+        <ul>
+            <li class="menu-item"><a href="">Trang chủ</a></li>
+            <li class="menu-item">
+                <a href="">Danh mục món ăn</a>
+                <ul>
+                    <li class="menu-item-2"><a href="">Trà sữa</a></li>
+                    <li class="menu-item-2"><a href="">Ăn vặt</a></li>
+                    <li class="menu-item-2"><a href="">Kem</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <form action="/0" method="post">
+                    <div class="input-group w-100 mx-auto d-flex mb-4">
+                        <input type="search" class="form-control p-3" placeholder="Tìm kiếm" aria-describedby="search-icon-1" name="query">
+                        <button id="search-icon-1" class="input-group-text p-3" fdprocessedid="l1mplt"><i class="fa fa-search"></i></button>
+                    </div>
+                    <input name="__RequestVerificationToken" type="hidden" value="1">
+                </form>
+            </li>
+            <li class="menu-item">
+                <a href=""><img src="./pic/lg-face.webp"></a>
+                <ul>
+                    <li class="menu-item-2"><a href="">Thông tin tài khoản</a></li>
+                    <li class="menu-item-2"><a href="">Giỏ hàng</a></li>
+                    <li class="menu-item-2"><a href="">Thanh toán</a></li>
+                    <li class="menu-item-2"><a href="">Cài đặt</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="slide">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://channel.mediacdn.vn/2021/5/3/photo-3-162003515157132669090.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://channel.mediacdn.vn/2021/4/27/photo-1-1619536488295922378403.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://channel.mediacdn.vn/2021/4/27/photo-2-16195364958541669396702.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="danhmuc text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="textdanhmuc">
+                        <h1>DANH MỤC MÓN ĂN</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="danhsach">
+                <div class="row1">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://i.pinimg.com/originals/50/d7/c7/50d7c73307bd04dd93bd50e0f001a266.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Trà sữa Socola</h4>
+                                    <h5 class="card-text">25.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6i7O9qjTxx-UFzJLfLo-wzBVHzyssO5tr9X44XnAPVm0kRam3NKKiwycHZpmz8dufJZ0&usqp=CAU" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Trà sữa nguyên chất</h4>
+                                    <h5 class="card-text">20.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://hopdungthucan.com/wp-content/uploads/2022/05/hinh-anh-ly-tra-sua-tran-chau-den_062227981.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Trà sữa trái cây</h4>
+                                    <h5 class="card-text">30.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://product.hstatic.net/200000598817/product/cach-lam-tra-sua-thai-xanh-1_6db0e56ff4e54cad8ef22cf82b09954f.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Trà sữa thái xanh</h4>
+                                    <h5 class="card-text">40.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.vietnammoi.vn/2019/7/31/photo-2-1564579594598655086576.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kim chi</h4>
+                                    <h5 class="card-text">15.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cavienchien.com.vn/upload/hinhanh/bang-gia-ca-vien-chien-gia-si783n.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Cá viên chiên</h4>
+                                    <h5 class="card-text">20.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://sieuthitana.vn/mediacenter/media/2864/images/rs(1).jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Bánh tráng trộn</h4>
+                                    <h5 class="card-text">10.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://dulichvietnam.com.vn/vnt_upload/File/Image/top_7_quan_an_vat_ngon_bo_re_quan_cau_giay_thu_hut_gioi_tre_ha_noi_anh13.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Combo chiên</h4>
+                                    <h5 class="card-text">80.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://bizweb.dktcdn.net/thumb/grande/100/093/924/products/walls-kem-oc-que-socola-hanh-nhan-cornerro-royale-choco-luv-1.png?v=1712548678880" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kem Socola</h4>
+                                    <h5 class="card-text">7.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://1.bp.blogspot.com/-QCtJjm_Ai0I/XcFvlPBkLPI/AAAAAAAATq4/_iWT_zwdaZU_hq3UwoWjbL6t7TS4jRddgCLcBGAsYHQ/s640/Cac-loai-kem-ban-tot-nhat.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kem dâu</h4>
+                                    <h5 class="card-text">7.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://pos.nvncdn.com/f52c3c-9106/ps/20170901_DKs7m6F62gMmKho5NI4jp4N7.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kem ly trái cây</h4>
+                                    <h5 class="card-text">15.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://hinh365.com/wp-content/uploads/2020/06/218-881-tam-anh-ve-kem-oc-que-kem-ly-dep-ngat-ngay-hinh-anh-chat-luong-cao-tren-123rf-com-20.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kem kí</h4>
+                                    <h5 class="card-text">20.000đ</h5>
+                                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="box">
+        <div class="noidungcall">
+            <h3>FOOD ANH TAI</h3>
+            <h1>FOOD OF THE DAY</h1>
+            <h3>Call and Order : 0763058366</h3>
+        </div>
+        <input class="btnmuangay" type="button" value="Mua ngay !">
+    </div>
+    <div class="container">
+        <div class="gt-kinang">
+            <div class="gt-kinang1">
+                <p>Điều gì tạo nên sự khác biệt</p>
+                <h1>Tại Food Anh Tai</h1>
+            </div>
+            <div class="gt-kinang2">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://png.pngtree.com/png-vector/20240326/ourlarge/pngtree-cartoon-food-dishes-and-objects-group-coloring-page-png-image_12209062.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Chất lượng hoàn hảo</h4>
+                                <p class="card-text">Thiết bị và nguyên liệu của Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-kitchen-cooking-coloring-page-vector-png-image_6788986.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Quy trình cực nhanh</h4>
+                                <p class="card-text">Thời gian nhanh chóng cho khách hàng không chờ đợi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-boy-in-a-chef-hat-and-apron-coloring-page-vector-png-image_6782921.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Kĩ thuật hoàn hảo</h4>
+                                <p class="card-text">Đội ngũ nhân viên được đào tạo kĩ càng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://tomautructuyen.vn/wp-content/uploads/2023/09/Tranh-to-mau-do-an-anime-Do-an-kieu-Han.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Hương vị tuyệt vời</h4>
+                                <p class="card-text">Hương vị chuẩn Đà Nẵng đầy ấn tượng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer class="text-center text-lg-start text-white"
+        style="background-color: #cc0000">
+
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">FOOD ANH TAI</h5>
+
+                    <p>
+                        Shop Food là một cửa hàng chuyên cung cấp các sản phẩm thực phẩm đa dạng và chất lượng cao,
+                        từ thực phẩm tươi sống đến các mặt hàng đóng gói và chế biến sẵn.
+                        Chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tốt nhất với các sản phẩm an toàn,
+                        tươi ngon và giá cả hợp lý.
+                    </p>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="mb-4" />
+
+        <!-- Section: CTA -->
+        <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Register for free</span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                    Sign up!
+                </button>
+            </p>
+        </section>
+        <!-- Section: CTA -->
+
+        <hr class="mb-4" />
+
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="#!"
+               role="button">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="#!"
+               role="button">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="#!"
+               role="button">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="#!"
+               role="button">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="#!"
+               role="button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="#!"
+               role="button">
+                <i class="fab fa-github"></i>
+            </a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)">
+        <p>Website thuộc về bản quyền của Anh Tài - Thành Long</p>
+        <p>© 2024 Copyright:</p>
+        <a class="text-white" href="https://www.facebook.com/profile.php?id=100012811543816">Anh Tài</a>
+    </div>
+</footer>
