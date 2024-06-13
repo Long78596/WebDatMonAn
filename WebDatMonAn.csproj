@@ -10,4 +10,17 @@
     <_ContentIncludedByDefault Remove="wwwroot\css\style.css" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Image\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Image\lg-face.webp" />
+    <None Include="wwwroot\Image\logo.webp" />
+    <None Include="wwwroot\Image\slide-1.png" />
+    <None Include="wwwroot\Image\slide-2.jpg" />
+    <None Include="wwwroot\Image\slide-3.jpg" />
+    <None Include="wwwroot\Image\slide1.jpg" />
+  </ItemGroup>
+
 </Project>
