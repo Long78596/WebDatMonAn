@@ -1,10 +1,15 @@
 ﻿
 .navbar {
-    background-color: #CC0000;
-    justify-content: center;
-    height: auto;
-    box-sizing: border-box;
-    border-bottom: 3px solid #ff4949;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content {
+    margin-top: 60px;
 }
 
 .lg-head img {
