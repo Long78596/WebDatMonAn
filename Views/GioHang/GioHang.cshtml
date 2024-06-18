@@ -1,1 +1,129 @@
-﻿123456yui
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box ;
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+        }
+        .input{
+            padding: px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .gio-hang{
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 4px #ddd;
+            padding: 20px;
+            max-width: auto;
+            margin: auto;
+        }
+        .item-gio-hang{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item-gio-hang .hinhAnh img{
+            width: 60px;
+            height: 60px;
+        }
+        .item-gio-hang .hinhAnh, .soluong, .tongtien, .hanhdong{
+            flex: 1;
+            margin-left: 20px;
+        }
+        .item-gio-hang .gia {
+            flex: 2;
+        }
+        .item-gio-hang .ten{
+            flex: 3;
+        }
+       .soluong{
+        margin-right: 20px;
+       }
+       .tongtien{
+        margin-left: 20px;
+       }
+       .hanhdong{
+       margin-left: 0%;
+       }
+       .giaBan{
+       
+       }
+       .item-gio-hang .gia .giaGoc {
+        font-size: 12px;
+        text-decoration: line-through;
+        color: #888;
+       }
+       .item-gio-hang .gia .giaBan{
+        color: rgb(231, 10, 10);
+       }
+       .item-gio-hang .hanhdong i:hover{
+        color: crimson;
+       }
+       table {
+        width: 100%;
+        border-collapse: collapse;
+       }
+       th, td {
+        padding: 10px;
+        text-align: left;
+       }
+       th {
+        background-color: #f2f2f2;
+       }
+    
+    </style>
+</head>
+<body>
+    <div class="gio-hang">
+        <div class="item-gio-hang">
+            <table class="hinhAnh">
+                <thead>
+                  <tr>
+                    <th scope="col">Sản Phẩm </th>
+                    <th scope="col">Đơn Giá </th>
+                    <th scope="col">Số Lượng </th>
+                    <th scope="col">Thành Tiền </th>
+                    <th scope="col">Hủy Món </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">
+                        <div>
+                            <p class = "ten">Kem Ốc Quế </p>
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7462/288599/kem-oc-que-celano-nam-viet-quat-110ml-66g-1.jpg" alt="Kem Ốc Quế ">
+                        </div>
+            
+                    </td>
+                    <td>
+                        <div class="gia">
+                        <span class="giaGoc">9000 đ </span>
+                        <span class="giaBan">7000 đ </span>
+                    </td>
+                    <td>
+                        <input type="number" class="soluong" value="1">
+                    </td>
+                    <td>
+                        <p class="tongtien">7000 đ</p>
+                    </td>
+                    <td>
+                        <div class="hanhdong">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </td>
+                  </tr>
+                </table>
+        </div>
+    </div>
+</body>
+</html>
