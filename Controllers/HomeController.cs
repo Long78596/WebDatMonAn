@@ -22,11 +22,19 @@ namespace WebDatMonAn.Controllers
         {
             return View();
         }
+        public IActionResult detail()
+        {
+            return View();
+        }
+        public IActionResult register()
+        {
+            return View();
+        }
         public IActionResult login()
         {
             return PartialView();
         }
-
+         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
