@@ -14,7 +14,7 @@
 }
 
 .TC {
-    background-color:lemonchiffon;
+    background-color: lemonchiffon;
 }
 
 html, body, .container {
@@ -89,4 +89,3 @@ html, body, .container {
     flex: 0 0 auto;
     width: 100%
 }
-
