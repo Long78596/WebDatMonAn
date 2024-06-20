@@ -30,6 +30,10 @@ namespace WebDatMonAn.Controllers
         {
             return View();
         }
+        public IActionResult category()
+        {
+            return View();
+        }
         public IActionResult login()
         {
             return PartialView();
