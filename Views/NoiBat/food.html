@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="foody.css">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .mobile-header {
+            background: #fff;
+            padding: 60px;
+            text-align: center;
+            font-size: 70px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .content-wrapper {
+            display: flex;
+            margin-top: 40px;
+        }
+
+        .mobile-content-left {
+            flex: 1;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+            .mobile-content-left img {
+                height: 700px;
+                width: auto;
+            }
+
+        .mobile-content-right {
+            flex: 2;
+            padding-left: 24px;
+        }
+
+        .mobile-content-group {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .mobile-item-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+            .mobile-item-left .icon {
+                height: 50px;
+                width: 50px;
+                background-size: 50px 50px;
+            }
+
+            .mobile-item-left .line-grey {
+                border-right: 2px solid #d7d7d9;
+                height: 70px;
+                width: 25px;
+                margin-top: 10px;
+            }
+
+        .mobile-item-right {
+            flex: 1;
+        }
+
+        .mobile-content-heading {
+            color: #222;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .mobile-content-text {
+            margin-top: 10px;
+            font-size: 25px;
+            line-height: 150%;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile-content-grey">
+        <div class="mobile-content">
+            <div class="mobile-header">
+                Những tính năng nổi bật của ứng dụng Food Group 2.
+            </div>
+            <div class="content-wrapper">
+                <div class="mobile-content-left">
+                    <img src="img/food.png" alt="food image" />
+                </div>
+                <div class="mobile-content-right">
+                    <div class="mobile-content-group">
+                        <div class="mobile-item-left">
+                            <div class="icon icon-foody">&nbsp;</div>
+                            <div class="line-grey">&nbsp;</div>
+                        </div>
+                        <div class="mobile-item-right">
+                            <div class="mobile-content-heading">Khám Phá</div>
+                            <div class="mobile-content-text">
+                                <p>
+                                    Bạn có thể tìm kiếm các địa điểm, xem đánh giá, hình ảnh, video, các món ăn,...
+                                </p>
+                                <p>
+                                    Đánh giá các địa điểm mà mình đã đến,
+                                    lưu lại các địa điểm thành bộ sưu tập riêng biệt để chia sẽ với cộng đồng.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-content-group">
+                        <div class="mobile-item-left">
+                            <div class="icon icon-deli">&nbsp;</div>
+                            <div class="line-grey">&nbsp;</div>
+                        </div>
+                        <div class="mobile-item-right">
+                            <div class="mobile-content-heading">Giao Tận Nơi</div>
+                            <div class="mobile-content-text">
+                                Đặt món ăn, thức uống, trái cây, bánh,… với các chương trình ưu đãi diễn ra thường xuyên.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-content-group">
+                        <div class="mobile-item-left">
+                            <div class="icon icon-table">&nbsp;</div>
+                            <div class="line-grey">&nbsp;</div>
+                        </div>
+                        <div class="mobile-item-right">
+                            <div class="mobile-content-heading">Đặt Bàn</div>
+                            <div class="mobile-content-text">
+                                Đặt bàn ở các quán trung bình và lớn với nhiều ưu đãi hấp dẫn.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-content-group">
+                        <div class="mobile-item-left">
+                            <div class="icon icon-coupon">&nbsp;</div>
+                            <div class="line-grey">&nbsp;</div>
+                        </div>
+                        <div class="mobile-item-right">
+                            <div class="mobile-content-heading">Coupon</div>
+                            <div class="mobile-content-text">
+                                Thường xuyên có các Coupon với giá ưu đãi dành cho thành viên Food Group 2.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-content-group">
+                        <div class="mobile-item-left">
+                            <div class="icon icon-self">&nbsp;</div>
+                        </div>
+                        <div class="mobile-item-right">
+                            <div class="mobile-content-heading">Tự đặt món</div>
+                            <div class="mobile-content-text">
+                                Bạn tự gọi món tại quán thông qua menu có trên ứng dụng.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
