@@ -20,8 +20,14 @@ namespace WebDatMonAn.Controllers
             return PartialView();
         }
       
-      
-
+        public IActionResult Register()
+        {
+            return PartialView();
+        }
+        public IActionResult LoginAdmin()
+        {
+            return PartialView();
+        }
         public IActionResult Login()
         {
             return PartialView();
